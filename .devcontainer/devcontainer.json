@@ -1,0 +1,24 @@
+{
+  "name": "Node.js",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": { "VARIANT": "18-bullseye" }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens"
+      ]
+    }
+  },
+
+  "postCreateCommand": "yarn install",
+
+  "remoteUser": "node",
+
+  "features": {
+    "git": "latest"
+  }
+}

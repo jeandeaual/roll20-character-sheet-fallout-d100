@@ -1,0 +1,141 @@
+:root {
+  --main-color: #155716;
+  --sub-color: #6ee081;
+  --text-color: gray;
+}
+
+.ui-dialog .charsheet {
+  /* Remove the padding from the base Roll20 stylesheet */
+  padding: 0;
+}
+
+main#sheet {
+  background-image: url("https://images4.alphacoders.com/969/96964.jpg");
+  background-size: 100%;
+}
+
+section {
+  margin-top: 30px;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: var(--main-color);
+  background-color: var(--sub-color);
+  text-align: center;
+  padding-left: 30px;
+}
+
+.attribute label,
+#bio label {
+  padding-top: 3px;
+}
+
+#bio {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  grid-template-rows: 25px;
+  padding-left: 10px;
+}
+
+#sheet label {
+  color: var(--text-color);
+}
+
+div.attribute {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 15% 10% 10% 10% 4%;
+  grid-template-rows: 25px;
+}
+
+/* Rolltemplate */
+
+/* Smaller margins - remove these if you want the huge default left margin */
+.sheet-rolltemplate-special {
+  margin-left: -37px;
+}
+
+.withoutavatars .sheet-rolltemplate-special {
+  margin-left: -7px;
+}
+
+.sheet-rolltemplate-special .sheet-container {
+  --header-bg-color: #206e21;
+  --header-text-color: black;
+
+  border: 1px solid;
+  border-color: var(--header-bg-color);
+}
+
+/* Header formatting - title and subtitle */
+.sheet-rolltemplate-special .sheet-header {
+  background-color: var(--header-bg-color);
+  text-align: left;
+  font-weight: bold;
+  color: var(--header-text-color);
+  padding: 5px;
+}
+
+.sheet-rolltemplate-special .sheet-title {
+  font-size: 1.1em;
+}
+
+.sheet-rolltemplate-special .sheet-subtitle {
+  font-size: 0.9em;
+}
+
+/* Allprops part */
+.sheet-rolltemplate-special .sheet-content {
+  display: grid;
+  background: #fff;
+
+  /* Header formatting - modify the column layout below */
+  grid-template-columns: auto auto;
+
+  /* Line height to match default roll template */
+  line-height: 1.4em;
+}
+
+.sheet-rolltemplate-special .sheet-content > div {
+  padding: 5px;
+}
+
+/* Left column */
+.sheet-rolltemplate-special .sheet-content .sheet-key {
+  font-weight: bold;
+  padding-right: 10px;
+  text-align: right;
+}
+
+/* Make even-numbered rows grey */
+.sheet-rolltemplate-special .sheet-content :nth-child(4n+3),
+.sheet-rolltemplate-special .sheet-content :nth-child(4n) {
+  background: #eee;
+}
+
+/* Description field */
+.sheet-rolltemplate-special .sheet-desc {
+  grid-column: span 2;
+  padding: 5px;
+  text-align: center;
+}
+
+.sheet-rolltemplate-special .sheet-desc.sheet-success,
+.sheet-rolltemplate-special .sheet-desc.sheet-critical-success {
+  background-color: #6ee081;
+}
+
+.sheet-rolltemplate-special .sheet-desc.sheet-failure,
+.sheet-rolltemplate-special .sheet-desc.sheet-critical-failure {
+  background-color: #d32c3a;
+}
+
+.sheet-rolltemplate-special .sheet-desc.sheet-critical-success,
+.sheet-rolltemplate-special .sheet-desc.sheet-critical-failure {
+  font-weight: bold;
+}

@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^26.0.0"
+  },
+  "scripts": {
+    "linthtml": "npx htmlhint '*.html'",
+    "lintcss": "npx stylelint '*.css'",
+    "lint": "npm run linthtml && npm run lintcss"
+  }
+}
