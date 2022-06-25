@@ -35,7 +35,7 @@ h3 {
 
 #bio {
   display: grid;
-  grid-template-columns: 20% 20%;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 25px;
   padding-left: 10px;
 }
@@ -49,8 +49,12 @@ div.attribute {
   padding-bottom: 10px;
   padding-left: 10px;
   display: grid;
-  grid-template-columns: 15% 10% 10% 10% 4%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 25px;
+}
+
+.attribute button {
+  width: 20px;
 }
 
 /* Rolltemplate */
