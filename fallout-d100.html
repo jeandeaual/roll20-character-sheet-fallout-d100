@@ -13,49 +13,63 @@
       <input name="attr_Strength" id="attr_strength" type="number" value="(@{StrengthBase})+(@{StrengthMod})" disabled="true">
       <input name="attr_StrengthBase" type="number" min="1" max="100" aria-label="Base strength">
       <input name="attr_StrengthMod" type="number" value="0" aria-label="Strength modifier">
-      <button type="roll" value="&{template:special} {{title=Strength}} {{roll=[[1d100]]}} {{target=[[@{StrengthBase}+@{StrengthMod}]]}}" aria-label="Roll strength"></button>
+      <input name="attr_StrengthCritLow" type="hidden" value="5">
+      <input name="attr_StrengthCritHigh" type="hidden" value="96">
+      <button type="roll" value="&{template:special} {{title=Strength}} {{roll=[[1d100]]}} {{target=[[@{StrengthBase}+@{StrengthMod}]]}} {{critLow=[[@{StrengthCritLow}]]}} {{critHigh=[[@{StrengthCritHigh}]]}}" aria-label="Roll strength"></button>
     </div>
     <div class="attribute">
       <label for="attr_perception">Perception</label>
       <input name="attr_Perception" id="attr_perception" type="number" value="(@{PerceptionBase})+(@{PerceptionMod})" disabled="true">
       <input name="attr_PerceptionBase" type="number" min="1" max="100" value="" aria-label="Base perception">
       <input name="attr_PerceptionMod" type="number" value="0" aria-label="Perception modifier">
-      <button type="roll" value="&{template:special} {{title=Perception}} {{roll=[[1d100]]}} {{target=[[@{PerceptionBase}+@{PerceptionMod}]]}}" aria-label="Roll perception"></button>
+      <input name="attr_PerceptionCritLow" type="hidden" value="5">
+      <input name="attr_PerceptionCritHigh" type="hidden" value="96">
+      <button type="roll" value="&{template:special} {{title=Perception}} {{roll=[[1d100]]}} {{target=[[@{PerceptionBase}+@{PerceptionMod}]]}} {{critLow=[[@{PerceptionCritLow}]]}} {{critHigh=[[@{PerceptionCritHigh}]]}}" aria-label="Roll perception"></button>
     </div>
     <div class="attribute">
       <label for="attr_endurance">Endurance</label>
       <input name="attr_Endurance" id="attr_endurance" type="number" value="(@{EnduranceBase})+(@{EnduranceMod})" disabled="true">
       <input name="attr_EnduranceBase" type="number" min="1" max="100" aria-label="Base endurance">
       <input name="attr_EnduranceMod" type="number" value="0" aria-label="Endurance modifier">
-      <button type="roll" value="&{template:special} {{title=Endurance}} {{roll=[[1d100]]}} {{target=[[@{EnduranceBase}+@{EnduranceMod}]]}}" aria-label="Roll endurance"></button>
+      <input name="attr_EnduranceCritLow" type="hidden" value="5">
+      <input name="attr_EnduranceCritHigh" type="hidden" value="96">
+      <button type="roll" value="&{template:special} {{title=Endurance}} {{roll=[[1d100]]}} {{target=[[@{EnduranceBase}+@{EnduranceMod}]]}} {{critLow=[[@{EnduranceCritLow}]]}} {{critHigh=[[@{EnduranceCritHigh}]]}}" aria-label="Roll endurance"></button>
     </div>
     <div class="attribute">
       <label for="attr_charisma">Charisme</label>
       <input name="attr_Charisma" id="attr_charisma" type="number" value="(@{CharismaBase})+(@{CharismaMod})" disabled="true">
       <input name="attr_CharismaBase" type="number" min="1" max="100" aria-label="Base charisma">
       <input name="attr_CharismaMod" type="number" value="0" aria-label="Charisma modifier">
-      <button type="roll" value="&{template:special} {{title=Charisma}} {{roll=[[1d100]]}} {{target=[[@{CharismaBase}+@{CharismaMod}]]}}" aria-label="Roll charisma"></button>
+      <input name="attr_CharismaCritLow" type="hidden" value="5">
+      <input name="attr_CharismaCritHigh" type="hidden" value="96">
+      <button type="roll" value="&{template:special} {{title=Charisma}} {{roll=[[1d100]]}} {{target=[[@{CharismaBase}+@{CharismaMod}]]}} {{critLow=[[@{CharismaCritLow}]]}} {{critHigh=[[@{CharismaCritHigh}]]}}" aria-label="Roll charisma"></button>
     </div>
     <div class="attribute">
       <label for="attr_intelligence">Intelligence</label>
       <input name="attr_Intelligence" id="attr_intelligence" type="number" value="(@{IntelligenceBase})+(@{IntelligenceMod})" disabled="true">
       <input name="attr_IntelligenceBase" type="number" min="1" max="100" aria-label="Base intelligence">
       <input name="attr_IntelligenceMod" type="number" value="0" aria-label="Intelligence modifier">
-      <button type="roll" value="&{template:special} {{title=Intelligence}} {{roll=[[1d100]]}} {{target=[[@{IntelligenceBase}+@{IntelligenceMod}]]}}" aria-label="Roll intelligence"></button>
+      <input name="attr_IntelligenceCritLow" type="hidden" value="5">
+      <input name="attr_IntelligenceCritHigh" type="hidden" value="96">
+      <button type="roll" value="&{template:special} {{title=Intelligence}} {{roll=[[1d100]]}} {{target=[[@{IntelligenceBase}+@{IntelligenceMod}]]}} {{critLow=[[@{IntelligenceCritLow}]]}} {{critHigh=[[@{IntelligenceCritHigh}]]}}" aria-label="Roll intelligence"></button>
     </div>
     <div class="attribute">
       <label for="attr_agility">Agilité</label>
       <input name="attr_Agility" id="attr_agility" type="number" value="(@{AgilityBase})+(@{AgilityMod})" disabled="true">
       <input name="attr_AgilityBase" type="number" min="1" max="100" aria-label="Base agility">
       <input name="attr_AgilityMod" type="number" value="0" aria-label="Agility modifier">
-      <button type="roll" value="&{template:special} {{title=Agility}} {{roll=[[1d100]]}} {{target=[[@{AgilityBase}+@{AgilityMod}]]}}" aria-label="Roll agility"></button>
+      <input name="attr_AgilityCritLow" type="hidden" value="5">
+      <input name="attr_AgilityCritHigh" type="hidden" value="96">
+      <button type="roll" value="&{template:special} {{title=Agility}} {{roll=[[1d100]]}} {{target=[[@{AgilityBase}+@{AgilityMod}]]}} {{critLow=[[@{AgilityCritLow}]]}} {{critHigh=[[@{AgilityCritHigh}]]}}" aria-label="Roll agility"></button>
     </div>
     <div class="attribute">
       <label for="attr_luck">Chance</label>
       <input name="attr_Luck" id="attr_luck" type="number" value="(@{LuckBase})+(@{LuckMod})" disabled="true">
       <input name="attr_LuckBase" type="number" min="1" max="100" aria-label="Base luck">
       <input name="attr_LuckMod" type="number" value="0" aria-label="Luck modifier">
-      <button type="roll" value="&{template:special} {{title=Luck}} {{roll=[[1d100]]}} {{target=[[@{LuckBase}+@{LuckMod}]]}}" aria-label="Roll luck"></button>
+      <input name="attr_LuckCritLow" type="hidden" value="5">
+      <input name="attr_LuckCritHigh" type="hidden" value="96">
+      <button type="roll" value="&{template:special} {{title=Luck}} {{roll=[[1d100]]}} {{target=[[@{LuckBase}+@{LuckMod}]]}} {{critLow=[[@{LuckCritLow}]]}} {{critHigh=[[@{LuckCritHigh}]]}}" aria-label="Roll luck"></button>
     </div>
   </section>
 </main>
@@ -77,20 +91,26 @@
       {{#roll}}
         <div class="sheet-key">Résultat</div><div class="sheet-value">{{roll}}</div>
       {{/roll}}
-      {{#rollLess() roll 6}}
-        <div class="sheet-desc sheet-critical-success">Succès critique !</div>
-      {{/rollLess() roll 6}}
-      {{#rollGreater() roll 95}}
-        <div class="sheet-desc sheet-critical-failure">Échec critique !</div>
-      {{/rollGreater() roll 95}}
-      {{#rollBetween() roll 6 target}}
-        <div class="sheet-desc sheet-success">Succès !</div>
-      {{/rollBetween() roll 6 target}}
-      {{#rollGreater() roll target}}
-        {{#rollLess() roll 96}}
-          <div class="sheet-desc sheet-failure">Échec !</div>
-        {{/rollLess() roll 96}}
-      {{/rollGreater() roll target}}
+      {{#critLow}}
+        {{#rollBetween() roll 1 critLow}}
+          <div class="sheet-desc sheet-critical-success">Succès critique !</div>
+        {{/rollBetween() roll 1 critLow}}
+        {{#rollGreater() roll critLow}}
+          {{#rollBetween() roll critLow target}}
+            <div class="sheet-desc sheet-success">Succès !</div>
+          {{/rollBetween() roll critLow target}}
+        {{/rollGreater() roll critLow}}
+      {{/critLow}}
+      {{#critHigh}}
+        {{#rollBetween() roll critHigh 100}}
+          <div class="sheet-desc sheet-critical-failure">Échec critique !</div>
+        {{/rollBetween() roll critHigh 100}}
+        {{#rollGreater() roll target}}
+          {{#rollLess() roll critHigh}}
+            <div class="sheet-desc sheet-failure">Échec !</div>
+          {{/rollLess() roll critHigh}}
+        {{/rollGreater() roll target}}
+      {{/critHigh}}
     </div>
   </div>
 </rolltemplate>
